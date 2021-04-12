@@ -1,0 +1,63 @@
+/* when the inout is invalid and not blank */
+input:invalid:not(:placeholder-shown) {
+  border: 2px solid red !important;
+}
+
+/* when input is invalid , show and make the adjacent validation text red */
+input:invalid:not(:placeholder-shown) + [data-validation-text] {
+  color: red !important;
+  display: block;
+}
+
+/* hide vaidation text by default */
+[data-validation-text] {
+  display: none;
+}
+
+/* pettier code */
+body,
+html {
+  background-color: #f7f7f7;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+form {
+  width: 400px;
+  margin: 50px auto 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #cecece;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 12px;
+  color: #888;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #cecece;
+  border-radius: 3px;
+  font-size: 18px;
+}
+
+span {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+h1 {
+  font-size: 18px;
+  text-align: center;
+}
